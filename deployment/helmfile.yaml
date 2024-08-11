@@ -1,0 +1,11 @@
+repositories:
+  - name: gocd
+    url: https://gocd.github.io/helm-chart
+
+releases:
+  - name: gocd
+    namespace: gocd
+    chart: gocd/gocd
+    version: "2.9.0"
+    values:
+    - ./values.yaml

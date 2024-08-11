@@ -1,0 +1,14 @@
+agent:
+  replicas: 2  # Number of agent pods you want to run
+  goServerUrl: https://<your-gocd-server-url>:8154/go
+  resources:
+    requests:
+      memory: "512Mi"
+      cpu: "500m"
+    limits:
+      memory: "1Gi"
+      cpu: "1"
+  # Additional configurations
+  autoRegisterKey: arafat
+  autoRegisterResources: "linux,docker"
+  autoRegisterEnvironments: "dev"
